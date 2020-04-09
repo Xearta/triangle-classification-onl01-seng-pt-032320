@@ -3,6 +3,7 @@ class Triangle
 
   def initalize(attributes)
     attributes.each {|key, value| self.send(("#{key}="), value)}
+    puts self
   end
 
   # Return the type of triangle
