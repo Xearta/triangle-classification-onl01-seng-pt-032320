@@ -1,9 +1,10 @@
 class Triangle
-  attr_accessor :equilateral, :isosceles, :scalene, :length_1, :length_2, :length_3
+  attr_accessor :equilateral, :isosceles, :scalene, :side1, :side2, :side3
 
-  def initalize(attributes)
-    attributes.each {|key, value| self.send(("#{key}="), value)}
-    puts self
+  def initalize(side1,side2,side3)
+    @side1 = side1
+    @side2 = side2
+    @side3 = side3
   end
 
   # Return the type of triangle
