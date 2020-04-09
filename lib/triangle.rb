@@ -17,6 +17,8 @@ class Triangle
   # -> 3, 4, -5
   # -> SUM of two sides are less than the greatest side
   def kind
+    
+
 
     if (@side1 == @side2) && (@side2 == @side3)
        :equilateral
