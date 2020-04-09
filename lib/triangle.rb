@@ -10,6 +10,6 @@ class Triangle
   # -> Isoceles    => Two sides same
   # -> Scalene     => All side different
   def kind
-    
+
   end
 end
