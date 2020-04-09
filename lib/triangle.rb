@@ -17,10 +17,10 @@ class Triangle
   # -> 3, 4, -5
   # -> SUM of two sides are less than the greatest side
   def kind
-    if (@side1 <= 0 || @side2 <= 0 || @side3 <= 0)
+    if (@side1 <= 0) || (@side2 <= 0) || (@side3 <= 0)
       raise TriangleError
-    elsif
-
+    elsif (@side1+@side2 <= @side3) || (@side2+@side3 <= @side1) || (@side1+@side3 <= @side2)
+      raise TriangleError
     else
       if (@side1 == @side2) && (@side2 == @side3)
          :equilateral
